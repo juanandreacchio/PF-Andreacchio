@@ -1,0 +1,828 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none; }
+
+a {
+  text-decoration: none; }
+
+body {
+  height: 100vh;
+  width: 100%;
+  position: relative; }
+
+li a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none; }
+
+dl,
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  transition: 0.3s;
+  box-sizing: border-box; }
+
+.logo {
+  margin: 0 auto; }
+  .logo a {
+    display: block; }
+    .logo a img {
+      display: block;
+      width: 100%;
+      padding-top: 10px; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto; }
+
+.nav_links {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  z-index: 1;
+  transition: 0.5s; }
+  .nav_links li {
+    list-style: none;
+    transition: all 0.3s; }
+    .nav_links li a {
+      color: #ff2530;
+      display: block;
+      font-size: 18px;
+      padding: 25px;
+      transition: all 0.3s; }
+  .nav_links li:hover {
+    box-shadow: 0 -5px 0px #ff2530 inset, 500px 0 0 rgba(137, 136, 136, 0.03) inset; }
+    .nav_links li:hover a {
+      color: #9c161c; }
+
+.hamburgesa {
+  position: relative;
+  width: 30px;
+  height: 4px;
+  background: #ff2530;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 2;
+  transition: all 0.3s; }
+  .hamburgesa .hamburgesa:before,
+  .hamburgesa .hamburgesa:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    right: 0;
+    background-color: #ff2530;
+    border-radius: 10px;
+    transition: all 0.3s; }
+
+.hamburgesa:before {
+  top: -10px;
+  width: 20px; }
+
+.hamburgesa:after {
+  top: 10px;
+  width: 20px; }
+
+.menu-desplegable {
+  position: absolute;
+  width: 30px;
+  height: 100%;
+  z-index: 3;
+  cursor: pointer;
+  opacity: 0; }
+
+.hamburgesa,
+.menu-desplegable {
+  display: none; }
+
+nav input:checked ~ .nav_links {
+  right: 0; }
+
+.footer_sponsors {
+  background-color: #db0715;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px; }
+
+.footer_sponsors2 {
+  display: flex;
+  align-items: flex-start;
+  background-color: #b71415;
+  padding: 20px;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center; }
+
+.caja_sponsors2 {
+  margin-left: 30px;
+  margin-right: 30px; }
+
+.footer_redes {
+  background-color: #202f66;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px; }
+
+.derechos {
+  padding-top: 10px;
+  margin-left: 20px; }
+  .derechos p {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    text-transform: uppercase; }
+    .derechos p a {
+      color: white;
+      text-decoration: none;
+      transition: all 300ms; }
+    .derechos p a:visited {
+      color: white;
+      text-decoration: none; }
+    .derechos p a:hover {
+      color: #f32029; }
+
+.posiciones {
+  display: flex;
+  justify-content: space-around; }
+
+/*TABLAS DE POSICIONES*/
+.header_ABA,
+.header_Euroliga {
+  padding: 25px;
+  text-align: center;
+  background-color: white;
+  color: #202f66;
+  font-family: "Montserrat", sans-serif;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  margin-top: 20px;
+  border-radius: 2px 2px 0 0; }
+  .header_ABA h4,
+  .header_Euroliga h4 {
+    margin-bottom: 1px;
+    font-weight: bold; }
+
+.th_1,
+.th_2 {
+  text-align: center; }
+
+.th_1 {
+  padding-right: 80px;
+  padding-left: 10px; }
+
+.th_2 {
+  padding: 0px 15px; }
+
+.posicion {
+  text-align: center; }
+
+table {
+  display: table;
+  border: 1px solid black;
+  box-sizing: border-box;
+  background-color: white;
+  border-collapse: collapse; }
+  table tbody tr td {
+    font-family: "Montserrat", sans-serif;
+    border-top: 1px solid black;
+    padding: 10px; }
+  table tbody tr:hover td {
+    background-color: #ecebeb;
+    cursor: pointer; }
+  table thead tr th {
+    font-family: "Montserrat", sans-serif;
+    color: #202f66; }
+
+.pos {
+  padding: 5px; }
+
+.VyD {
+  text-align: center; }
+
+.linea_flex {
+  display: flex;
+  align-items: center; }
+
+/*NOTICIAS*/
+.grid-noticias {
+  display: grid;
+  grid-template-columns: 0.3fr 1fr 1fr 0.3fr 1fr 1fr 0.3fr 1fr 1fr 0.3fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: ". noticia-1 noticia-1 . noticia-2 noticia-2 . noticia-3 noticia-3 ." ". noticia-1 noticia-1 . noticia-2 noticia-2 . noticia-3 noticia-3 ." ". noticia-4 noticia-4 . noticia-5 noticia-5 . noticia-6 noticia-6 ." ". noticia-4 noticia-4 . noticia-5 noticia-5 . noticia-6 noticia-6 ." ". noticia-7 noticia-7 . noticia-8 noticia-8 . noticia-9 noticia-9 ." ". noticia-7 noticia-7 . noticia-8 noticia-8 . noticia-9 noticia-9 .";
+  margin: 15px 0px; }
+
+.noticia-1 {
+  grid-area: noticia-1; }
+
+.noticia-4 {
+  grid-area: noticia-4; }
+
+.noticia-2 {
+  grid-area: noticia-2; }
+
+.noticia-3 {
+  grid-area: noticia-3; }
+
+.noticia-5 {
+  grid-area: noticia-5; }
+
+.noticia-6 {
+  grid-area: noticia-6; }
+
+.noticia-7 {
+  grid-area: noticia-7; }
+
+.noticia-8 {
+  grid-area: noticia-8; }
+
+.noticia-9 {
+  grid-area: noticia-9; }
+
+.grid-noticias > div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 15px 0px;
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden; }
+  .grid-noticias > div img {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 5px; }
+  .grid-noticias > div > a {
+    padding-bottom: 20px;
+    height: 100%; }
+    .grid-noticias > div > a label {
+      color: #f32029;
+      text-decoration: none;
+      transition: all 300ms;
+      padding: 5px; }
+    .grid-noticias > div > a img {
+      transition: all 300ms; }
+    .grid-noticias > div > a span {
+      color: #8a8989;
+      font-size: 10px; }
+  .grid-noticias > div > a:hover label {
+    color: #761419;
+    text-decoration: none;
+    cursor: pointer; }
+  .grid-noticias > div > a:hover img {
+    transform: scale(1.1); }
+
+/*FIN NOTICIAS*/
+.titulo_posiciones,
+.titulo_noticias,
+.posiciones_info,
+.titulos_camisetas,
+.proximo-titulo {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+  letter-spacing: 7px;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 15px; }
+
+.titulos_camisetas {
+  padding-top: 30px;
+  margin-top: 0; }
+
+.titulo_posiciones
+.titulo_noticias h2 {
+  margin: 0;
+  font-weight: bold; }
+
+#posiciones_jugadores > ul {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px; }
+  #posiciones_jugadores > ul li {
+    display: inline;
+    padding: 10px;
+    background-color: white;
+    color: #f32029;
+    font-family: "Montserrat", sans-serif;
+    margin-left: 3px; }
+
+.caja_jugadores {
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+  gap: 80px; }
+
+.jugadores,
+.tecnicos {
+  margin-left: 15px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #ff2530;
+  overflow: hidden; }
+
+.jugadores > img {
+  transition: 0.5s;
+  object-fit: cover;
+  box-sizing: border-box;
+  padding: 10px; }
+
+.jugadores > img:hover {
+  transform: scale(1.05); }
+
+.jugadores:hover,
+.tecnicos:hover {
+  background-color: #f0efef;
+  cursor: pointer; }
+
+#contenido {
+  background-color: white;
+  border-radius: 5px;
+  padding: 0px 10px; }
+
+.jugadores_info {
+  display: flex;
+  padding-top: 10px; }
+
+.numero-jugador {
+  width: 20%;
+  text-align: center;
+  background-color: #f32029;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 23px;
+  color: white;
+  border-radius: 3px; }
+
+.player-name,
+.apellido-jugador {
+  font-size: 23px;
+  font-weight: bold;
+  padding-left: 10px; }
+
+.player-name {
+  color: #ff2530; }
+
+.nombre-jugador {
+  width: 80%; }
+
+.CT-name,
+.CT-apellido {
+  font-size: 23px;
+  font-weight: bold; }
+
+.CT-name {
+  color: #ff2530; }
+
+.grid-partidos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 20px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "partido-1 partido-1 partido-1 partido-1 partido-1" "partido-2 partido-2 partido-2 partido-2 partido-2" "partido-3 partido-3 partido-3 partido-3 partido-3" "partido-4 partido-4 partido-4 partido-4 partido-4" "partido-5 partido-5 partido-5 partido-5 partido-5" "partido-6 partido-6 partido-6 partido-6 partido-6";
+  width: 100%;
+  margin-top: 20px; }
+
+.partido-1 {
+  grid-area: partido-1; }
+
+.partido-2 {
+  grid-area: partido-2; }
+
+.partido-3 {
+  grid-area: partido-3; }
+
+.partido-4 {
+  grid-area: partido-4; }
+
+.partido-5 {
+  grid-area: partido-5; }
+
+.partido-6 {
+  grid-area: partido-6; }
+
+h2 {
+  text-align: center; }
+
+.proximo-partido {
+  display: flex;
+  justify-content: center;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+  flex-direction: column;
+  background-color: white; }
+
+.equipos-liga {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding-bottom: 20px; }
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff2530;
+  color: white;
+  padding: 15px; }
+
+.horario {
+  margin: 0;
+  display: block;
+  margin-right: 10px; }
+
+.fecha-lugar {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid white;
+  padding-left: 7px; }
+
+.fecha-lugar > a span > a span {
+  color: white; }
+
+.logo-record {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .logo-record img {
+    padding: 15px 0px; }
+  .logo-record span {
+    font-weight: bold; }
+
+.liga-tickets {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.liga-name {
+  font-weight: bold; }
+
+.grid-partidos > div {
+  background-color: white;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px; }
+
+.data-partido {
+  display: flex;
+  align-items: center; }
+  .data-partido > img {
+    margin: 0px 15px; }
+
+.dia,
+.horario {
+  padding: 0px 10px;
+  border-left: 2px solid #ccc; }
+
+.jornada-lugar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 10px; }
+  .jornada-lugar > a > span {
+    color: #e20c0c; }
+
+.partido-equipos {
+  display: flex; }
+
+.local {
+  padding-right: 13%; }
+
+.visita {
+  padding-left: 13%; }
+
+.grid-partidos > div {
+  display: grid;
+  grid-template-columns: 1fr 0.7fr 0.2fr 2.5fr 0.2fr 1.4fr;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "data-partido data-partido . partido-equipos . tickets"; }
+
+.data-partido {
+  grid-area: data-partido; }
+
+.partido-equipos {
+  grid-area: partido-equipos; }
+
+.tickets {
+  grid-area: tickets;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .tickets > a button {
+    padding: 15px 30px;
+    background-color: #ff2530;
+    color: white;
+    border: 3px solid #c91d26;
+    transition: all 300ms; }
+  .tickets > a button:hover {
+    cursor: pointer;
+    background-color: #202f66;
+    border: 3px solid #141e42; }
+
+.data-partido {
+  grid-area: data-partido; }
+
+.partido-equipos {
+  grid-area: partido-equipos; }
+
+.equipo-logo-record {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  align-items: flex-start; }
+  .equipo-logo-record > img {
+    padding-bottom: 5px; }
+
+.record {
+  color: #8c8c8c; }
+
+.proximo-titulo {
+  border-bottom: 1px solid #ccc; }
+
+main {
+  background-color: #202f66;
+  padding: 10px; }
+
+/*HISTORIA*/
+.lista-decada {
+  color: #ff2530;
+  background: white;
+  display: block;
+  width: 100%;
+  list-style: none;
+  border-radius: 5px; }
+  .lista-decada > li {
+    border-bottom: 1px solid #ccc; }
+    .lista-decada > li > span {
+      padding: 50px;
+      display: block;
+      font-size: 40px;
+      line-height: 40px; }
+  .lista-decada li:hover {
+    cursor: pointer;
+    background-color: #f2f2f2; }
+    .lista-decada li:hover .lista-anio {
+      display: flex;
+      flex-direction: column; }
+    .lista-decada li:hover > span {
+      color: #b11b23; }
+
+.lista-anio {
+  list-style: none;
+  display: none;
+  transition: all 300ms;
+  width: 100%;
+  color: #ff2530;
+  font-size: 20px;
+  padding: 10px 50px; }
+  .lista-anio > li {
+    padding-bottom: 8px; }
+
+#camisetas {
+  display: flex;
+  flex-wrap: wrap; }
+
+.tienda_producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 15px;
+  border-radius: 6px;
+  width: 23%; }
+  .tienda_producto > label {
+    text-align: center;
+    padding: 7px; }
+  .tienda_producto > span {
+    color: #202f66;
+    padding-bottom: 7px; }
+  .tienda_producto a button {
+    padding: 8px 15px;
+    background-color: #ff2530;
+    color: white;
+    border: none; }
+  .tienda_producto a:hover button {
+    background-color: #b71415;
+    cursor: pointer; }
+
+/*CARROUSEL*/
+.texto-bajo-imagen {
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 40px;
+  color: #ff2530; }
+  .texto-bajo-imagen > h5 {
+    font-size: 30px;
+    font-weight: bold;
+    transition: all 300ms; }
+  .texto-bajo-imagen > p {
+    transition: all 300ms; }
+
+.carousel-item:hover .texto-bajo-imagen > h5 {
+  color: #b11b23; }
+
+.carousel-item:hover .texto-bajo-imagen > p {
+  background-color: #ccc; }
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 900px) {
+  .grid-noticias {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px 0px;
+    grid-template-areas: "noticia-1" "noticia-2" "noticia-3" "noticia-4" "noticia-5" "noticia-6" "noticia-7" "noticia-8" "noticia-9"; }
+  .grid-noticias > div {
+    width: 80%;
+    margin: 0 auto; }
+  .posiciones {
+    flex-direction: column;
+    align-items: center; }
+  .header_ABA,
+  .header_Euroliga {
+    width: 100%;
+    margin-top: 15px; }
+  table {
+    width: 100%; }
+  .footer_sponsors,
+  .footer_sponsors2 {
+    padding: 10px; }
+  .adida {
+    width: 42.5px;
+    height: 28.95px; }
+  .footer1-logo2 {
+    width: 46px;
+    height: 25px; }
+  .footer2-logo1 {
+    width: 40px;
+    height: 24px; }
+  .footer3-logo {
+    width: 32px;
+    height: 19.2px; }
+  .redes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; }
+  .derechos {
+    padding-top: 15px; }
+  .derechos a, .derechos span {
+    font-size: 10px; }
+  .caja_jugadores {
+    flex-direction: column;
+    align-items: center; }
+  .jugadores,
+  .tecnicos {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px; }
+  .jugadores > img {
+    margin: 0 auto;
+    object-fit: cover; }
+  .lista-anio > li > span > li > span {
+    font-size: 15px; }
+  .header {
+    flex-direction: row;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center; }
+  .logo {
+    margin: 0; }
+    .logo img {
+      width: 74px;
+      height: 85.5px; }
+    .logo a img {
+      width: auto;
+      padding: 0; }
+  nav {
+    margin: 0; }
+  .hamburgesa,
+  .menu-desplegable {
+    display: block; }
+  .nav_links {
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    background-color: white;
+    width: 300px;
+    height: 100%;
+    padding-top: 65px; }
+  .nav_links li {
+    width: 100%;
+    border-bottom: 1px solid #ccc; }
+    .nav_links li a {
+      font-size: 18px;
+      display: block;
+      padding: 30px; }
+  ol,
+  ul {
+    padding-left: 0; }
+  .posiciones_ABA,
+  .posiciones_Euroliga {
+    width: 80%; }
+  .pos {
+    text-align: center; }
+  .th_1 {
+    text-align: start; } }
+
+.container-productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+
+.producto {
+  flex: 1 1 300px;
+  background-color: #fff;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 20px;
+  transition: all 300ms; }
+
+.producto:hover {
+  background: #f2f2f2;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+
+.imagen-producto {
+  padding: 20px;
+  background: #eee;
+  text-align: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px 5px 0px 0px; }
+  .imagen-producto > img {
+    height: 200px;
+    width: 250px;
+    object-fit: cover; }
+
+.titulo-producto {
+  padding: 10px;
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  border-left: 1px solid rgba(0, 0, 0, 0.3); }
+
+.subinfo-producto {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 8px 10px;
+  padding-bottom: 15px;
+  border: 1px solid #ff2530;
+  border-radius: 0px 0px 5px 5px; }
+
+.precio-producto {
+  color: blue;
+  font-size: 20px;
+  padding-bottom: 8px; }
+
+.comprar-producto > button {
+  padding: 7px 15px;
+  color: white;
+  border: none;
+  background-color: red;
+  transition: all 0.3s; }
+
+.comprar-producto > button:hover {
+  background-color: #ad0303;
+  cursor: pointer; }
