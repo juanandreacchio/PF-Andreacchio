@@ -79,23 +79,24 @@ nav {
   cursor: pointer;
   z-index: 2;
   transition: all 0.3s; }
-  .hamburgesa .hamburgesa:before,
-  .hamburgesa .hamburgesa:after {
-    content: "";
-    position: absolute;
-    height: 4px;
-    right: 0;
-    background-color: #ff2530;
-    border-radius: 10px;
-    transition: all 0.3s; }
+
+.hamburgesa:before,
+.hamburgesa:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  right: 0;
+  background-color: #ff2530;
+  border-radius: 10px;
+  transition: all 0.3s; }
 
 .hamburgesa:before {
   top: -10px;
-  width: 20px; }
+  width: 100%; }
 
 .hamburgesa:after {
   top: 10px;
-  width: 20px; }
+  width: 100%; }
 
 .menu-desplegable {
   position: absolute;
@@ -328,7 +329,8 @@ table {
     font-family: "Montserrat", sans-serif;
     margin-left: 3px; }
 
-.caja_jugadores {
+.caja_jugadores,
+.caja_tecnicos {
   display: flex;
   justify-content: flex-start;
   border-bottom: 1px solid #ccc;
@@ -703,15 +705,29 @@ main {
   .caja_jugadores {
     flex-direction: column;
     align-items: center; }
-  .jugadores,
-  .tecnicos {
-    width: 300px;
+  .jugadores {
     display: flex;
     flex-direction: column;
-    margin-top: 15px; }
-  .jugadores > img {
-    margin: 0 auto;
-    object-fit: cover; }
+    margin-top: 15px;
+    width: 80%;
+    margin-left: 0; }
+    .jugadores > img {
+      object-fit: cover; }
+  .player-name,
+  .apellido-jugador,
+  .numero-jugador,
+  .CT-name,
+  .CT-apellido {
+    font-size: 35px; }
+  .caja_tecnicos {
+    flex-direction: column; }
+  .tecnicos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-left: 0; }
+    .tecnicos > img {
+      object-fit: cover; }
   .lista-anio > li > span > li > span {
     font-size: 15px; }
   .header {
