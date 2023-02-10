@@ -43,6 +43,43 @@ ul {
       width: 100%;
       padding-top: 10px; }
 
+.decada {
+  padding: 20px;
+  color: #ff2530;
+  background: white;
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  padding: 50px;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: start;
+  transition: all 300ms;
+  border: none;
+  border-bottom: 1px solid #ccc; }
+
+.decada:hover {
+  background-color: #f2f2f2;
+  color: #b11b23; }
+
+.dropdown-menu {
+  width: 100%;
+  padding-bottom: 0; }
+  .dropdown-menu > li {
+    border-bottom: 1px solid #ccc;
+    margin: 0;
+    padding: 25px 10px; }
+  .dropdown-menu > li:last-child {
+    border-bottom: none; }
+  .dropdown-menu > li:hover span {
+    color: #b11b23;
+    cursor: default; }
+
+.anios > li span {
+  color: #ff2530;
+  font-size: 20px;
+  transition: all 0.3s; }
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -361,7 +398,9 @@ table {
 #contenido {
   background-color: white;
   border-radius: 5px;
-  padding: 0px 10px; }
+  padding: 0px 10px;
+  overflow-y: auto;
+  overflow-x: hidden; }
 
 .jugadores_info {
   display: flex;
@@ -727,8 +766,8 @@ main {
     margin-left: 0; }
     .tecnicos > img {
       object-fit: cover; }
-  .lista-anio > li > span > li > span {
-    font-size: 15px; }
+  .anios > li > span {
+    font-size: medium; }
   .header {
     flex-direction: row;
     padding: 10px 20px;
@@ -748,6 +787,7 @@ main {
   .menu-desplegable {
     display: block; }
   .nav_links {
+    padding-left: 0;
     justify-content: start;
     flex-direction: column;
     align-items: center;
@@ -758,13 +798,13 @@ main {
     width: 300px;
     height: 100%;
     padding-top: 65px; }
-  .nav_links li {
-    width: 100%;
-    border-bottom: 1px solid #ccc; }
-    .nav_links li a {
-      font-size: 18px;
-      display: block;
-      padding: 30px; }
+    .nav_links li {
+      width: 100%;
+      border-bottom: 1px solid #ccc; }
+      .nav_links li a {
+        font-size: 18px;
+        display: block;
+        padding: 30px; }
   .grid-partidos > div {
     display: flex;
     flex-direction: column;
