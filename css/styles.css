@@ -668,7 +668,7 @@ main {
     gap: 20px 0px;
     grid-template-areas: "noticia-1" "noticia-2" "noticia-3" "noticia-4" "noticia-5" "noticia-6" "noticia-7" "noticia-8" "noticia-9"; }
   .grid-noticias > div {
-    width: 80%;
+    width: 100%;
     margin: 0 auto; }
   .posiciones {
     flex-direction: column;
@@ -806,12 +806,10 @@ main {
       order: 3;
       box-sizing: border-box;
       padding-bottom: 10px; }
-  .proximo-partido .equipos-liga {
-    max-width: 100%; }
-    .proximo-partido .equipos-liga .logo-record > img,
-    .proximo-partido .equipos-liga .liga-tickets > img {
-      width: 90%;
-      height: 90%; }
+  .proximo-partido .equipos-liga .logo-record > img,
+  .proximo-partido .equipos-liga .liga-tickets > img {
+    width: 85%;
+    height: 85%; }
   ol,
   ul {
     padding-left: 0; }
