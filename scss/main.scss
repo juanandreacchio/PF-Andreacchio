@@ -560,7 +560,7 @@ table {
 }
 
 .nombre-jugador {
-    width: 80%;
+    width: 85%;
 }
 
 .CT-name,
@@ -661,15 +661,14 @@ h2 {
     flex-direction: column;
     border-left: 1px solid white;
     padding-left: 7px;
-}
-
-.fecha-lugar>a span {
     >a{
         span{
             color: white;
         }
     }
 }
+
+
 
 .logo-record {
     display: flex;
@@ -1038,7 +1037,7 @@ main {
         display: flex;
         flex-direction: column;
         margin-top: 15px;
-        width: 80%;
+        width: 85%;
         margin-left: 0;
         >img {
         object-fit: cover;
@@ -1050,7 +1049,7 @@ main {
 .numero-jugador,
 .CT-name,
 .CT-apellido {
-    font-size: 35px;
+    font-size: x-large;
 }
 
 
@@ -1208,7 +1207,7 @@ main {
 
     .posiciones_ABA,
     .posiciones_Euroliga {
-        width: 80%;
+        width: 85%;
     }
 
     .pos {
@@ -1218,6 +1217,16 @@ main {
     .th_1 {
         text-align: start;
     }
+}
+
+@media only screen and (max-width:300px){
+    .player-name,
+.apellido-jugador,
+.numero-jugador,
+.CT-name,
+.CT-apellido {
+    font-size: large;
+}
 }
 
 

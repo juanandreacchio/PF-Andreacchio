@@ -389,7 +389,7 @@ table {
   color: #ff2530; }
 
 .nombre-jugador {
-  width: 80%; }
+  width: 85%; }
 
 .CT-name,
 .CT-apellido {
@@ -467,9 +467,8 @@ h2 {
   flex-direction: column;
   border-left: 1px solid white;
   padding-left: 7px; }
-
-.fecha-lugar > a span > a span {
-  color: white; }
+  .fecha-lugar > a span {
+    color: white; }
 
 .logo-record {
   display: flex;
@@ -709,7 +708,7 @@ main {
     display: flex;
     flex-direction: column;
     margin-top: 15px;
-    width: 80%;
+    width: 85%;
     margin-left: 0; }
     .jugadores > img {
       object-fit: cover; }
@@ -718,7 +717,7 @@ main {
   .numero-jugador,
   .CT-name,
   .CT-apellido {
-    font-size: 35px; }
+    font-size: x-large; }
   .caja_tecnicos {
     flex-direction: column; }
   .tecnicos {
@@ -815,11 +814,19 @@ main {
     padding-left: 0; }
   .posiciones_ABA,
   .posiciones_Euroliga {
-    width: 80%; }
+    width: 85%; }
   .pos {
     text-align: center; }
   .th_1 {
     text-align: start; } }
+
+@media only screen and (max-width: 300px) {
+  .player-name,
+  .apellido-jugador,
+  .numero-jugador,
+  .CT-name,
+  .CT-apellido {
+    font-size: large; } }
 
 .container-productos {
   display: flex;
