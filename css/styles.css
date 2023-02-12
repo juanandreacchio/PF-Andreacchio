@@ -14,7 +14,6 @@ body {
   position: relative; }
 
 li a {
-  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
   text-decoration: none; }
@@ -105,7 +104,7 @@ nav {
   .nav_links li:hover {
     box-shadow: 0 -5px 0px #ff2530 inset, 500px 0 0 rgba(137, 136, 136, 0.03) inset; }
     .nav_links li:hover a {
-      color: #9c161c; }
+      color: #b11b23; }
 
 .hamburgesa {
   position: relative;
@@ -182,7 +181,6 @@ nav input:checked ~ .nav_links {
   margin-left: 20px; }
   .derechos p {
     color: white;
-    font-family: "Montserrat", sans-serif;
     font-size: 12px;
     text-transform: uppercase; }
     .derechos p a {
@@ -193,7 +191,7 @@ nav input:checked ~ .nav_links {
       color: white;
       text-decoration: none; }
     .derechos p a:hover {
-      color: #f32029; }
+      color: #b11b23; }
 
 .posiciones {
   display: flex;
@@ -206,7 +204,6 @@ nav input:checked ~ .nav_links {
   text-align: center;
   background-color: white;
   color: #202f66;
-  font-family: "Montserrat", sans-serif;
   border-top: 1px solid black;
   border-right: 1px solid black;
   border-left: 1px solid black;
@@ -238,14 +235,12 @@ table {
   background-color: white;
   border-collapse: collapse; }
   table tbody tr td {
-    font-family: "Montserrat", sans-serif;
     border-top: 1px solid black;
     padding: 10px; }
   table tbody tr:hover td {
     background-color: #ecebeb;
     cursor: pointer; }
   table thead tr th {
-    font-family: "Montserrat", sans-serif;
     color: #202f66; }
 
 .pos {
@@ -323,7 +318,7 @@ table {
       color: #8a8989;
       font-size: 10px; }
   .grid-noticias > div > a:hover label {
-    color: #761419;
+    color: #b11b23;
     text-decoration: none;
     cursor: pointer; }
   .grid-noticias > div > a:hover img {
@@ -336,7 +331,6 @@ table {
 .titulos_camisetas,
 .proximo-titulo {
   color: black;
-  font-family: "Montserrat", sans-serif;
   background-color: white;
   letter-spacing: 7px;
   text-align: center;
@@ -363,7 +357,6 @@ table {
     padding: 10px;
     background-color: white;
     color: #f32029;
-    font-family: "Montserrat", sans-serif;
     margin-left: 3px; }
 
 .caja_jugadores,
@@ -585,7 +578,7 @@ h2 {
     padding: 15px 30px;
     background-color: #ff2530;
     color: white;
-    border: 3px solid #c91d26;
+    border: 3px solid #b11b23;
     transition: all 300ms; }
   .tickets > a button:hover {
     cursor: pointer;
@@ -674,7 +667,7 @@ main {
     color: white;
     border: none; }
   .tienda_producto a:hover button {
-    background-color: #b71415;
+    background-color: #b11b23;
     cursor: pointer; }
 
 /*CARROUSEL*/
@@ -699,7 +692,7 @@ main {
   background-color: #ccc; }
 
 /*MEDIA QUERIES*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   .grid-noticias {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -919,7 +912,7 @@ main {
   border-radius: 0px 0px 5px 5px; }
 
 .precio-producto {
-  color: blue;
+  color: #202f66;
   font-size: 20px;
   padding-bottom: 8px; }
 
@@ -927,9 +920,9 @@ main {
   padding: 7px 15px;
   color: white;
   border: none;
-  background-color: red;
+  background-color: #ff2530;
   transition: all 0.3s; }
 
 .comprar-producto > button:hover {
-  background-color: #ad0303;
+  background-color: #b11b23;
   cursor: pointer; }

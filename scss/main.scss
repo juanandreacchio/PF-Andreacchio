@@ -1,14 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import './utilidades/colors';
+@import './utilidades/reset';
 
 
-
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: "Montserrat", sans-serif;
-    text-decoration: none;
-}
 
 a {
     text-decoration: none;
@@ -22,7 +15,6 @@ body {
 
 li {
     a {
-        font-family: "Montserrat", sans-serif;
         font-weight: 500;
         font-size: 16px;
         text-decoration: none;
@@ -63,7 +55,7 @@ ul {
 
 .decada{
     padding: 20px;
-    color: #ff2530;
+    color: $rojo-principal;
     background: white;
     display: block;
     width: 100%;
@@ -79,7 +71,7 @@ ul {
 
 .decada:hover{
     background-color: #f2f2f2; 
-    color: #b11b23;;
+    color: $rojo-hover;;
 }
 
 
@@ -98,7 +90,7 @@ ul {
     }
     >li:hover{
         span{
-            color: #b11b23;
+            color: $rojo-hover;
             cursor: default;
         }
     }
@@ -111,7 +103,7 @@ ul {
 .anios{
     >li{
         span{
-            color: #ff2530;
+            color: $rojo-principal;
             font-size: 20px;
             transition: all 0.3s;
         }
@@ -139,7 +131,7 @@ nav {
         transition: all 0.3s;
 
         a {
-            color: #ff2530;
+            color: $rojo-principal;
             display: block;
             font-size: 18px;
             padding: 25px;
@@ -148,11 +140,11 @@ nav {
     }
 
     li:hover {
-        box-shadow: 0 -5px 0px #ff2530 inset,
+        box-shadow: 0 -5px 0px $rojo-principal inset,
             500px 0 0 rgba(137, 136, 136, 0.03) inset;
 
         a {
-            color: #9c161c;
+            color: $rojo-hover;
         }
     }
 }
@@ -167,7 +159,7 @@ nav {
     position: relative;
     width: 30px;
     height: 4px;
-    background: #ff2530;
+    background: $rojo-principal;
     border-radius: 10px;
     cursor: pointer;
     z-index: 2;
@@ -181,7 +173,7 @@ nav {
     position: absolute;
     height: 4px;
     right: 0;
-    background-color: #ff2530;
+    background-color: $rojo-principal;
     border-radius: 10px;
     transition: all 0.3s;
 }
@@ -242,7 +234,7 @@ nav input:checked~.nav_links {
 }
 
 .footer_redes {
-    background-color: #202f66;
+    background-color: $azul-principal;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -255,7 +247,6 @@ nav input:checked~.nav_links {
 
     p {
         color: white;
-        font-family: "Montserrat", sans-serif;
         font-size: 12px;
         text-transform: uppercase;
 
@@ -271,7 +262,7 @@ nav input:checked~.nav_links {
         }
 
         a:hover {
-            color: #f32029;
+            color: $rojo-hover;
         }
     }
 }
@@ -295,8 +286,7 @@ nav input:checked~.nav_links {
     padding: 25px;
     text-align: center;
     background-color: white;
-    color: #202f66;
-    font-family: "Montserrat", sans-serif;
+    color: $azul-principal;
     border-top: 1px solid black;
     border-right: 1px solid black;
     border-left: 1px solid black;
@@ -340,7 +330,6 @@ table {
     tbody {
         tr {
             td {
-                font-family: "Montserrat", sans-serif;
                 border-top: 1px solid black;
                 padding: 10px;
             }
@@ -357,8 +346,7 @@ table {
     thead {
         tr {
             th {
-                font-family: "Montserrat", sans-serif;
-                color: #202f66;
+                color: $azul-principal;
             }
         }
     }
@@ -471,7 +459,7 @@ table {
         }
         >a:hover{
             label{
-                color: #761419;
+                color: $rojo-hover;
                 text-decoration: none;
                 cursor: pointer;
             }
@@ -499,7 +487,6 @@ table {
 .titulos_camisetas,
 .proximo-titulo {
     color: black;
-    font-family: "Montserrat", sans-serif;
     background-color: white;
     letter-spacing: 7px;
     text-align: center;
@@ -533,7 +520,6 @@ table {
         padding: 10px;
         background-color: white;
         color: #f32029;
-        font-family: "Montserrat", sans-serif;
         margin-left: 3px;
     }
 }
@@ -557,7 +543,7 @@ table {
 .tecnicos {
     margin-left: 15px;
     padding-bottom: 7px;
-    border-bottom: 1px solid #ff2530;
+    border-bottom: 1px solid $rojo-principal;
     overflow: hidden;
 }
 
@@ -614,7 +600,7 @@ table {
 }
 
 .player-name {
-    color: #ff2530;
+    color: $rojo-principal;
 }
 
 .nombre-jugador {
@@ -628,7 +614,7 @@ table {
 }
 
 .CT-name {
-    color: #ff2530;
+    color: $rojo-principal;
 }
 
 
@@ -703,7 +689,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ff2530;
+    background-color: $rojo-principal;
     color: white;
     padding: 15px;
 }
@@ -833,14 +819,14 @@ h2 {
     >a{
         button{
             padding: 15px 30px;
-            background-color: #ff2530;
+            background-color: $rojo-principal;
             color: white;
-            border: 3px solid #c91d26;
+            border: 3px solid $rojo-hover;
             transition: all 300ms;
         }
         button:hover{
             cursor: pointer;
-            background-color: #202f66;
+            background-color: $azul-principal;
             border: 3px solid #141e42;
         }
     }
@@ -881,14 +867,14 @@ h2 {
 
 
 main {
-    background-color: #202f66;
+    background-color: $azul-principal;
     padding: 10px;
 }
 
 /*HISTORIA*/
 
 .lista-decada {
-    color: #ff2530;
+    color: $rojo-principal;
     background: white;
     display: block;
     width: 100%;
@@ -911,7 +897,7 @@ main {
             flex-direction: column;
         }
         >span{
-            color: #b11b23;
+            color: $rojo-hover;
         }
     }
 }
@@ -921,7 +907,7 @@ main {
     display: none;
     transition: all 300ms;
     width: 100%;
-    color: #ff2530;
+    color: $rojo-principal;
     font-size: 20px;
     padding: 10px 50px;
     >li{
@@ -950,20 +936,20 @@ main {
         padding: 7px;
     }
     >span{
-        color: #202f66;
+        color: $azul-principal;
         padding-bottom: 7px;
     }
     a{
         button{
             padding: 8px 15px;
-            background-color: #ff2530;
+            background-color: $rojo-principal;
             color: white;
             border: none;
         }
     }
     a:hover{
         button{
-            background-color: #b71415;
+            background-color: $rojo-hover;
             cursor: pointer;
         }
     }
@@ -980,7 +966,7 @@ main {
     font-weight: bold;
     padding: 10px;
     font-size: 40px;
-    color: #ff2530;
+    color: $rojo-principal;
     >h5{
         font-size: 30px;
         font-weight: bold;
@@ -994,7 +980,7 @@ main {
 
 
 .carousel-item:hover .texto-bajo-imagen>h5 {
-    color: #b11b23;
+    color: $rojo-hover;
 }
 
 .carousel-item:hover .texto-bajo-imagen>p {
@@ -1004,7 +990,7 @@ main {
 
 
 /*MEDIA QUERIES*/
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:900px) {
     .grid-noticias {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -1344,12 +1330,12 @@ main {
     justify-content: space-between;
     padding: 8px 10px;
     padding-bottom: 15px;
-    border: 1px solid #ff2530;
+    border: 1px solid $rojo-principal;
     border-radius: 0px 0px 5px 5px;
 }
 
 .precio-producto {
-    color: blue;
+    color: $azul-principal;
     font-size: 20px;
     padding-bottom: 8px;
     ;
@@ -1360,11 +1346,11 @@ main {
     padding: 7px 15px;
     color: white;
     border: none;
-    background-color: red;
+    background-color: $rojo-principal;
     transition: all 0.3s;
     }
     >button:hover{
-        background-color: rgb(173, 3, 3);
+        background-color: $rojo-hover;
         cursor: pointer;
     }
 }
