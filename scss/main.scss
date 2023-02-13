@@ -48,6 +48,7 @@ ul {
             display: block;
             width: 100%;
             padding-top: 10px;
+            box-sizing: content-box;
         }
     }
 
@@ -125,7 +126,8 @@ nav {
     align-items: center;
     z-index: 1;
     transition: 0.5s;
-
+margin-bottom: 0;
+padding-left: 0;
     li {
         list-style: none;
         transition: all 0.3s;
@@ -238,8 +240,43 @@ nav input:checked~.nav_links {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 20px 10px;
 }
+
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+  .fa-facebook,
+  .fa-twitter,
+  .fa-instagram,
+  .fa-youtube {
+    color: white;
+    box-sizing: content-box;
+    transition: all 0.3s;
+  }
+
+  .fa-facebook:hover,
+  .fa-twitter:hover,
+  .fa-instagram:hover,
+  .fa-youtube:hover {
+    color: $rojo-principal;
+    box-sizing: content-box;
+  }
+
+  .fa-facebook:active,
+  .fa-twitter:active,
+  .fa-instagram:active,
+  .fa-youtube:active {
+    color: $rojo-hover;
+    box-sizing: content-box;
+  }
+
 
 .derechos {
     padding-top: 10px;
@@ -262,6 +299,10 @@ nav input:checked~.nav_links {
         }
 
         a:hover {
+            color: $rojo-principal;
+        }
+
+        a:active{
             color: $rojo-hover;
         }
     }
@@ -274,7 +315,16 @@ nav input:checked~.nav_links {
 
 .posiciones {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+.posiciones_ABA,
+.posiciones_Euroliga {
+    width: 80%;
+}
+
+.posiciones_ABA{
+    margin-right: 10px;
 }
 
 /*TABLAS DE POSICIONES*/
@@ -302,10 +352,6 @@ nav input:checked~.nav_links {
 
 
 
-.th_1,
-.th_2 {
-    text-align: center;
-}
 
 .th_1 {
     padding-right: 80px;
@@ -313,6 +359,7 @@ nav input:checked~.nav_links {
 }
 
 .th_2 {
+    text-align: center;
     padding: 0px 15px;
 }
 
@@ -326,7 +373,7 @@ table {
     box-sizing: border-box;
     background-color: white;
     border-collapse: collapse;
-
+    width: 100%;
     tbody {
         tr {
             td {
@@ -356,6 +403,7 @@ table {
 
 .pos {
     padding: 5px;
+    text-align: center;
 }
 
 .VyD {
@@ -1057,6 +1105,13 @@ main {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        box-sizing: content-box;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .fa{
+        font-size: 15px;
     }
 
     .derechos {

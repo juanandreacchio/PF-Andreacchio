@@ -40,7 +40,8 @@ ul {
     .logo a img {
       display: block;
       width: 100%;
-      padding-top: 10px; }
+      padding-top: 10px;
+      box-sizing: content-box; }
 
 .decada {
   padding: 20px;
@@ -91,7 +92,9 @@ nav {
   flex-direction: row;
   align-items: center;
   z-index: 1;
-  transition: 0.5s; }
+  transition: 0.5s;
+  margin-bottom: 0;
+  padding-left: 0; }
   .nav_links li {
     list-style: none;
     transition: all 0.3s; }
@@ -174,7 +177,37 @@ nav input:checked ~ .nav_links {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px; }
+  padding: 20px 10px; }
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%; }
+
+.fa-facebook,
+.fa-twitter,
+.fa-instagram,
+.fa-youtube {
+  color: white;
+  box-sizing: content-box;
+  transition: all 0.3s; }
+
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-instagram:hover,
+.fa-youtube:hover {
+  color: #ff2530;
+  box-sizing: content-box; }
+
+.fa-facebook:active,
+.fa-twitter:active,
+.fa-instagram:active,
+.fa-youtube:active {
+  color: #b11b23;
+  box-sizing: content-box; }
 
 .derechos {
   padding-top: 10px;
@@ -191,11 +224,20 @@ nav input:checked ~ .nav_links {
       color: white;
       text-decoration: none; }
     .derechos p a:hover {
+      color: #ff2530; }
+    .derechos p a:active {
       color: #b11b23; }
 
 .posiciones {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-between; }
+
+.posiciones_ABA,
+.posiciones_Euroliga {
+  width: 80%; }
+
+.posiciones_ABA {
+  margin-right: 10px; }
 
 /*TABLAS DE POSICIONES*/
 .header_ABA,
@@ -214,15 +256,12 @@ nav input:checked ~ .nav_links {
     margin-bottom: 1px;
     font-weight: bold; }
 
-.th_1,
-.th_2 {
-  text-align: center; }
-
 .th_1 {
   padding-right: 80px;
   padding-left: 10px; }
 
 .th_2 {
+  text-align: center;
   padding: 0px 15px; }
 
 .posicion {
@@ -233,7 +272,8 @@ table {
   border: 1px solid black;
   box-sizing: border-box;
   background-color: white;
-  border-collapse: collapse; }
+  border-collapse: collapse;
+  width: 100%; }
   table tbody tr td {
     border-top: 1px solid black;
     padding: 10px; }
@@ -244,7 +284,8 @@ table {
     color: #202f66; }
 
 .pos {
-  padding: 5px; }
+  padding: 5px;
+  text-align: center; }
 
 .VyD {
   text-align: center; }
@@ -728,7 +769,12 @@ main {
   .redes {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    box-sizing: content-box;
+    width: 100%;
+    justify-content: flex-end; }
+  .fa {
+    font-size: 15px; }
   .derechos {
     padding-top: 15px; }
   .derechos a, .derechos span {
