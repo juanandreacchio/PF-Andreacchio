@@ -31,7 +31,15 @@ ul {
   flex-direction: column;
   background-color: white;
   transition: 0.3s;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  align-items: center; }
+
+h1 {
+  padding: 20px;
+  color: #ff2530;
+  font-weight: bold;
+  font-size: 40px;
+  margin: 0; }
 
 .logo {
   margin: 0 auto; }
@@ -108,6 +116,14 @@ nav {
     box-shadow: 0 -5px 0px #ff2530 inset, 500px 0 0 rgba(137, 136, 136, 0.03) inset; }
     .nav_links li:hover a {
       color: #b11b23; }
+
+.logo-menu {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 1px solid #ff2530; }
 
 .hamburgesa {
   position: relative;
@@ -808,7 +824,8 @@ main {
   .anios > li > span {
     font-size: medium; }
   .header {
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     padding: 10px 20px;
     justify-content: space-between;
     align-items: center; }
@@ -844,6 +861,13 @@ main {
         font-size: 18px;
         display: block;
         padding: 30px; }
+  .logo-menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    border: none; }
   .grid-partidos > div {
     display: flex;
     flex-direction: column;

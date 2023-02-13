@@ -36,6 +36,15 @@ ul {
     background-color: white;
     transition: 0.3s;
     box-sizing: border-box;
+    align-items: center;
+}
+
+h1{
+    padding: 20px;
+    color: $rojo-principal;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0;
 }
 
 
@@ -53,6 +62,8 @@ ul {
     }
 
 }
+
+
 
 .decada{
     padding: 20px;
@@ -149,6 +160,15 @@ padding-left: 0;
             color: $rojo-hover;
         }
     }
+}
+
+.logo-menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid $rojo-principal;
 }
 
 
@@ -1178,7 +1198,8 @@ main {
 
 
     .header {
-        flex-direction: row;
+        display: flex;
+        flex-direction: column;
         padding: 10px 20px;
         justify-content: space-between;
         align-items: center;
@@ -1233,6 +1254,16 @@ main {
         }
         }
     }
+
+    .logo-menu {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        border: none;
+    }
+
 
 .grid-partidos{
     >div{
