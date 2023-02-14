@@ -306,9 +306,9 @@ table {
 .VyD {
   text-align: center; }
 
-.linea_flex {
-  display: flex;
-  align-items: center; }
+.linea_flex > span,
+.linea_flex > img {
+  vertical-align: middle; }
 
 /*NOTICIAS*/
 .grid-noticias {
@@ -917,11 +917,13 @@ main {
     padding-left: 0; }
   .posiciones_ABA,
   .posiciones_Euroliga {
-    width: 85%; }
+    width: 90%; }
   .pos {
     text-align: center; }
   .th_1 {
-    text-align: start; } }
+    text-align: start; }
+  .posiciones_ABA {
+    margin-right: 0; } }
 
 @media only screen and (max-width: 300px) {
   .player-name,

@@ -431,8 +431,10 @@ table {
 }
 
 .linea_flex {
-    display: flex;
-    align-items: center;
+    >span,
+    >img{
+        vertical-align: middle;
+    }
 }
 
 /*NOTICIAS*/
@@ -1339,7 +1341,7 @@ main {
 
     .posiciones_ABA,
     .posiciones_Euroliga {
-        width: 85%;
+        width: 90%;
     }
 
     .pos {
@@ -1348,6 +1350,10 @@ main {
 
     .th_1 {
         text-align: start;
+    }
+
+    .posiciones_ABA{
+        margin-right: 0;
     }
 }
 
