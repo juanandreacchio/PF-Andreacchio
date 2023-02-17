@@ -1,0 +1,236 @@
+.grid-partidos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 20px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "partido-1 partido-1 partido-1 partido-1 partido-1"
+        "partido-2 partido-2 partido-2 partido-2 partido-2"
+        "partido-3 partido-3 partido-3 partido-3 partido-3"
+        "partido-4 partido-4 partido-4 partido-4 partido-4"
+        "partido-5 partido-5 partido-5 partido-5 partido-5"
+        "partido-6 partido-6 partido-6 partido-6 partido-6";
+    width: 100%;
+    margin-top: 20px;
+    >div{
+        display: grid;
+        grid-template-columns: 1fr 0.7fr 0.2fr 2.5fr 0.2fr 1.4fr;
+        grid-template-rows: 1fr;
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "data-partido data-partido . partido-equipos . tickets";
+            background-color: white;
+            width: 100%;
+            border: 1px solid black;
+            border-radius: 5px;
+    }
+}
+
+.partido-1 {
+    grid-area: partido-1;
+}
+
+.partido-2 {
+    grid-area: partido-2;
+}
+
+.partido-3 {
+    grid-area: partido-3;
+}
+
+.partido-4 {
+    grid-area: partido-4;
+}
+
+.partido-5 {
+    grid-area: partido-5;
+}
+
+.partido-6 {
+    grid-area: partido-6;
+}
+
+
+
+.proximo-partido {
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    flex-direction: column;
+    background-color: white;
+}
+
+.equipos-liga {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding-bottom: 20px;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $rojo-principal;
+    color: white;
+    padding: 15px;
+}
+
+.horario {
+    margin: 0;
+    display: block;
+    margin-right: 10px;
+}
+
+.fecha-lugar {
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid white;
+    padding-left: 7px;
+    >a{
+        span{
+            color: white;
+        }
+    }
+}
+
+
+
+.logo-record {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img{
+        padding: 15px 0px;
+    }
+    span{
+        font-weight: bold;
+    }
+}
+
+
+
+.liga-tickets {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.liga-name{
+    font-weight: bold;
+}
+
+
+.data-partido {
+    display: flex;
+    align-items: center;
+    >img{
+        margin: 0px 15px;
+    }
+}
+
+
+.dia,
+.horario {
+    padding: 0px 10px;
+    border-left: 2px solid #ccc;
+}
+
+.jornada-lugar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 10px;
+    >a{
+        >span{
+            color: #e20c0c;
+        }
+    }
+}
+
+
+.partido-equipos {
+    display: flex;
+}
+
+.local {
+    padding-right: 13%;
+}
+
+.visita {
+    padding-left: 13%;
+}
+
+
+
+
+.data-partido {
+    grid-area: data-partido;
+}
+
+.partido-equipos {
+    grid-area: partido-equipos;
+}
+
+.tickets {
+    grid-area: tickets;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    >a{
+        button{
+            padding: 15px 30px;
+            background-color: $rojo-principal;
+            color: white;
+            border: 3px solid $rojo-hover;
+            transition: all 300ms;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: $azul-principal;
+            border: 3px solid #141e42;
+        }
+    }
+}
+
+
+
+
+.data-partido {
+    grid-area: data-partido;
+}
+
+.partido-equipos {
+    grid-area: partido-equipos;
+}
+
+.equipo-logo-record {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    align-items: flex-start;
+    >img{
+        padding-bottom: 5px;
+    }
+}
+
+
+.record {
+    color: rgb(140, 140, 140);
+}
+
+
+
+.proximo-titulo {
+    border-bottom: 1px solid #ccc;
+}

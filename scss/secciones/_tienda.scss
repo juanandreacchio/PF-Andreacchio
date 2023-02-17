@@ -1,0 +1,79 @@
+.container-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.producto {
+    flex: 1 1 300px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 20px;
+    transition: all 300ms;
+}
+
+
+.producto:hover {
+    background: rgb(242, 242, 242);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.imagen-producto {
+    padding: 20px;
+    background: #eee;
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px 5px 0px 0px;
+    >img {
+        height: 200px;
+        width: 250px;
+        object-fit: cover;
+    }
+}
+
+.titulo-producto {
+    padding: 10px;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.subinfo-producto {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8px 10px;
+    padding-bottom: 15px;
+    border: 1px solid $rojo-principal;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.precio-producto {
+    color: $azul-principal;
+    font-size: 20px;
+    padding-bottom: 8px;
+    ;
+}
+
+.comprar-producto {
+    >button{
+    padding: 7px 15px;
+    color: white;
+    border: none;
+    background-color: $rojo-principal;
+    transition: all 0.3s;
+    }
+    >button:hover{
+        background-color: $rojo-hover;
+        cursor: pointer;
+    }
+}
+

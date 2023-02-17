@@ -1,0 +1,131 @@
+.header {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    transition: 0.3s;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.logo {
+    margin: 0 auto;
+    a {
+        display: block;
+        img {
+            display: block;
+            width: 100%;
+            padding-top: 10px;
+            box-sizing: content-box;
+        }
+    }
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.nav_links {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1;
+    transition: 0.5s;
+margin-bottom: 0;
+padding-left: 0;
+    li {
+        list-style: none;
+        transition: all 0.3s;
+
+        a {
+            color: $rojo-principal;
+            display: block;
+            font-size: 18px;
+            padding: 25px;
+            transition: all 0.3s;
+        }
+    }
+
+    li:hover {
+        box-shadow: 0 -5px 0px $rojo-principal inset,
+            500px 0 0 rgba(137, 136, 136, 0.03) inset;
+
+        a {
+            color: $rojo-hover;
+        }
+    }
+}
+
+.logo-menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid $rojo-principal;
+}
+
+
+
+
+
+
+
+.hamburgesa {
+    position: relative;
+    width: 30px;
+    height: 4px;
+    background: $rojo-principal;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 2;
+    transition: all 0.3s;
+
+}
+
+.hamburgesa:before,
+.hamburgesa:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    right: 0;
+    background-color: $rojo-principal;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+
+
+.hamburgesa:before {
+    top: -10px;
+    width: 100%;
+}
+
+.hamburgesa:after {
+    top: 10px;
+    width: 100%;
+}
+
+.menu-desplegable {
+    position: absolute;
+    width: 30px;
+    height: 100%;
+    z-index: 3;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.hamburgesa,
+.menu-desplegable {
+    display: none;
+}
+
+nav input:checked~.nav_links {
+    right: 0;
+}

@@ -1,0 +1,56 @@
+.decada{
+    padding: 20px;
+    color: $rojo-principal;
+    background: white;
+    display: block;
+    width: 100%;
+    border-radius: 5px; 
+    padding: 50px;
+    font-size: 40px;
+    line-height: 40px; 
+    text-align: start;
+    transition: all 300ms;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.decada:hover{
+    background-color: #f2f2f2; 
+    color: $rojo-hover;;
+}
+
+
+
+
+.dropdown-menu{
+    width: 100%;
+    padding-bottom: 0;
+    >li{
+        border-bottom: 1px solid #ccc;
+        margin: 0; 
+        padding: 25px 10px;
+    }
+    >li:last-child{
+        border-bottom: none;
+    }
+    >li:hover{
+        span{
+            color: $rojo-hover;
+            cursor: default;
+        }
+    }
+}
+
+
+
+
+
+.anios{
+    >li{
+        span{
+            color: $rojo-principal;
+            font-size: 20px;
+            transition: all 0.3s;
+        }
+    }
+}

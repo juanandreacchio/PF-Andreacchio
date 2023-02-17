@@ -1,0 +1,100 @@
+#posiciones_jugadores {
+    >ul{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    li{
+        display: inline;
+        padding: 10px;
+        background-color: white;
+        color: #f32029;
+        margin-left: 3px;
+    }
+}
+}
+
+
+
+
+
+
+.caja_jugadores,
+.caja_tecnicos {
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    gap: 80px;
+}
+
+.jugadores,
+.tecnicos {
+    margin-left: 15px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid $rojo-principal;
+    overflow: hidden;
+}
+
+.jugadores{
+    >img{
+        transition: 0.5s;
+        object-fit: cover;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    >img:hover{
+        transform: scale(1.05);
+    }
+}
+
+
+.jugadores:hover,
+.tecnicos:hover {
+    background-color: rgb(240, 239, 239);
+    cursor: pointer;
+}
+
+
+
+.jugadores_info {
+    display: flex;
+    padding-top: 10px;
+}
+
+.numero-jugador {
+    width: 20%;
+    text-align: center;
+    background-color: #f32029;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 23px;
+    color: white;
+    border-radius: 3px;
+}
+
+.player-name,
+.apellido-jugador {
+    font-size: 23px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.player-name {
+    color: $rojo-principal;
+}
+
+.nombre-jugador {
+    width: 85%;
+}
+
+.CT-name,
+.CT-apellido {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.CT-name {
+    color: $rojo-principal;
+}
